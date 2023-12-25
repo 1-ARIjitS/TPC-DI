@@ -1,0 +1,16 @@
+COPY staging.batchdate FROM '/home/workspace/data/sf_current/Batch1/BatchDate.txt';
+COPY staging.cashtransaction FROM '/home/workspace/data/sf_current/Batch1/CashTransaction.txt' delimiter '|';
+COPY staging.dailymarket FROM '/home/workspace/data/sf_current/Batch1/DailyMarket.txt' delimiter '|';
+COPY staging.date FROM '/home/workspace/data/sf_current/Batch1/Date.txt' delimiter '|';
+COPY staging.holdinghistory FROM '/home/workspace/data/sf_current/Batch1/HoldingHistory.txt' delimiter '|';
+COPY staging.hr FROM '/home/workspace/data/sf_current/Batch1/HR.csv' delimiter ',' CSV;
+COPY staging.industry FROM '/home/workspace/data/sf_current/Batch1/Industry.txt' delimiter '|';
+COPY staging.prospect FROM '/home/workspace/data/sf_current/Batch1/Prospect.csv' delimiter ',' CSV;
+COPY staging.statustype FROM '/home/workspace/data/sf_current/Batch1/StatusType.txt' delimiter '|';
+COPY staging.taxrate FROM '/home/workspace/data/sf_current/Batch1/TaxRate.txt' delimiter '|';
+COPY staging.time FROM '/home/workspace/data/sf_current/Batch1/Time.txt' delimiter '|';
+COPY staging.tradehistory FROM '/home/workspace/data/sf_current/Batch1/TradeHistory.txt' delimiter '|';
+COPY staging.trade FROM '/home/workspace/data/sf_current/Batch1/Trade.txt' delimiter '|' null as '';
+COPY staging.tradetype FROM '/home/workspace/data/sf_current/Batch1/TradeType.txt' delimiter '|';
+COPY staging.watchhistory FROM '/home/workspace/data/sf_current/Batch1/WatchHistory.txt' delimiter '|';
+COPY staging.audit FROM '/home/workspace/data/sf_current/Batch1_audit.csv' DELIMITER ',' HEADER CSV NULL AS '';
